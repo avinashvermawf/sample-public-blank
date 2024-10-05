@@ -44,3 +44,7 @@ Trying second commit
 11. git commit -m "second local commit"
 12. git push
 
+For using a remote repo first time local
+1. git clone https://github.com/avinashvermawf/sample-public-blank     for public repo
+2. git clone https://{Your PAT token}@github.com/avinashvermawf/sample-public-blank.git      for private repo
+
