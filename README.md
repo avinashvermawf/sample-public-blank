@@ -25,5 +25,22 @@ So the correct command is
 6. create token and save somewhere safe
 7. You can also use fine grained PAT option and select Content permissions read and write
 8. Refer https://stackoverflow.com/questions/63906613/minimal-set-of-scopes-to-push-to-github-using-an-access-token
-9. Use this command instead in step 8 https://{Your PAT token}@github.com/avinashvermawf/sample-public-blank.git
-   (using curly braces above instead of less than greater than sign as git is ignoring those for some reason)
+9. Use this command instead in step 8
+   https://{Your PAT token}@github.com/avinashvermawf/sample-public-blank.git
+(using curly braces above instead of less than greater than sign as git is ignoring those for some reason)
+
+
+Trying second commit
+1. We updated some text in github directly and committed the changes. Now we need to check how our local changes can be committed over it
+2. There are multiple ways to resolve this conflict as mentioned in https://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me
+3. Using below commands for now
+4. git pull       ---- this is combination of git fetch and git merge
+5. if there is conflict pull will be aborted
+6. git stash
+7. git pull
+8. git stash pop
+9. this gave conflict with stashed changes section in file. Resolve conflict by removing the portions not required and section headers
+10. git add .
+11. git commit -m "second local commit"
+12. git push
+
