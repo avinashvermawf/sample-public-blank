@@ -65,3 +65,25 @@ git remote set-head origin -a
     (use "git restore <file>..." to discard changes in working directory)
 
 
+
+Use standard way of commiting changes to branch and creating PR
+1. Go to github repo settings-> Rules -> Rulesets -> New branch ruleset
+2. give some name to rule
+3. Add target branch to default branch
+4. Under Rules-> branch rules, check Require a pull request before merging
+5. Select additional checkboxes that appeared based on requirement
+6. Click on Create
+
+Now if you will try to push to master, you will get error. To resolve follow below steps:
+1. Create new branch either in github or by command
+2. git branch new_branch      ---will create from current branch
+3. git branch        -- this is to list out branches. for remote list use git branch -a
+4. git checkout new_branch       -- switch local repo to new branch
+5. git checkout -b new_branch ----- this is combination of 2 and 4
+6. git push origin new_branch     -- to push to remote
+7. git add .
+8. git commit -m "commit in new branch"
+9. git push --> this will show error
+10. git push -u origin new_branch     --- -u means --set-upstream
+11. Above command not require again on next commit. simply use git push
+
