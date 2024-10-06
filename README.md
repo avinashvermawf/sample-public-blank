@@ -49,3 +49,19 @@ For using a remote repo first time local
 2. git clone https://{Your PAT token}@github.com/avinashvermawf/sample-public-blank.git      for private repo
 
 3. Step 1 clone is helpful only for read only. For write access use step 2.
+
+
+
+Renaming default branch from main to master
+1. Go to repo in github->Settings->Default branch->edit to master save.
+2. If you have local changes, use git stash
+3. If you have a local clone, you can update it by running the following commands.
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+4. git stash pop
+5.  (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+
+
