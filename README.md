@@ -81,4 +81,9 @@ Now if you will try to push to master, you will get error. To resolve follow bel
 4. git checkout new_branch       -- switch local repo to new branch
 5. git checkout -b new_branch ----- this is combination of 2 and 4
 6. git push origin new_branch     -- to push to remote
+7. git add .
+8. git commit -m "commit in new branch"
+9. git push --> this will show error
+10. git push -u origin new_branch     --- -u means --set-upstream
+11. Above command not require again on next commit. simply use git push
 
