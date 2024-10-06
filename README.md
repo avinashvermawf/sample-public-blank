@@ -65,3 +65,12 @@ git remote set-head origin -a
     (use "git restore <file>..." to discard changes in working directory)
 
 
+
+Use standard way of commiting changes to branch and creating PR
+1. Go to github repo settings-> Rules -> Rulesets -> New branch ruleset
+2. give some name to rule
+3. Add target branch to default branch
+4. Under Rules-> branch rules, check Require a pull request before merging
+5. Select additional checkboxes that appeared based on requirement
+6. Click on Create
+
