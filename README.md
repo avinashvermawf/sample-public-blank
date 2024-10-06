@@ -74,3 +74,11 @@ Use standard way of commiting changes to branch and creating PR
 5. Select additional checkboxes that appeared based on requirement
 6. Click on Create
 
+Now if you will try to push to master, you will get error. To resolve follow below steps:
+1. Create new branch either in github or by command
+2. git branch new_branch      ---will create from current branch
+3. git branch        -- this is to list out branches. for remote list use git branch -a
+4. git checkout new_branch       -- switch local repo to new branch
+5. git checkout -b new_branch ----- this is combination of 2 and 4
+6. git push origin new_branch     -- to push to remote
+
